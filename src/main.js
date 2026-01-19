@@ -253,8 +253,6 @@ async function updateFavorites(pageN) {
   results.forEach(res => {
     const newEx = exerciseTemplate.cloneNode(true);
 
-    console.log(res);
-
     newEx.addEventListener("click", () => exerciseOverlay(res));
 
     newEx.querySelector(".exercise-title").textContent = res.name.charAt(0).toUpperCase() + res.name.slice(1);
