@@ -21,7 +21,6 @@ section.main .route .title, section.main .route .separator {
   font-weight: 400;
   font-size: 44px;
   line-height: 48px;
-  letter-spacing: -2%;
   color: var(--dark);
 }
 section.main .route .separator {
@@ -32,7 +31,6 @@ section.main .route .category-title {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: -2%;
   color: color-mix(in srgb, var(--dark) 50%, transparent);
   display: none;
 }
@@ -190,6 +188,9 @@ section.main div.main .second-block .fact {
   align-items: start;
   gap: 16px;
 }
+section.main div.main.fav .second-block .fact {
+  width: 100%;
+}
 section.main div.main.fav .second-block img.home2 {
   display: none;
 }
@@ -210,7 +211,6 @@ section.main div.main .second-block .fact .fact-time {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0px;
   color: var(--dark);
   margin-bottom: 6px;
 }
@@ -219,7 +219,6 @@ section.main div.main .second-block .fact .fact-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: color-mix(in srgb, var(--dark) 60%, transparent);
   margin-bottom: 20px;
 }
@@ -231,7 +230,6 @@ section.main div.main .second-block .fact .fact-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: var(--dark);
 }
 section.main div.main.fav .second-block .fact .fact-text {
@@ -359,7 +357,6 @@ a.exercise .first .label {
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
-  letter-spacing: 0%;
 }
 a.exercise .first .rating { 
   display: flex;
@@ -371,7 +368,6 @@ a.exercise .first .rating p {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: var(--dark);
 }
 a.exercise .first .start { 
@@ -386,7 +382,6 @@ a.exercise .first .start p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
 }
 a.exercise .second { 
   display: flex;
@@ -400,7 +395,6 @@ a.exercise .second p {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0px;
   color: var(--dark);
 }
 a.exercise .third { 
@@ -420,7 +414,6 @@ a.exercise .third div p:first-child {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: color-mix(in srgb, var(--dark) 40%, transparent);
 }
 a.exercise .third div p:last-child { 
@@ -428,7 +421,6 @@ a.exercise .third div p:last-child {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: var(--dark);
 }
 p.no-results {
@@ -436,7 +428,6 @@ p.no-results {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0px;
   text-align: center;
   margin: 20vh auto;
   max-width: 50%;

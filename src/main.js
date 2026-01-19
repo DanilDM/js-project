@@ -493,7 +493,7 @@ ratingInput.addEventListener('input', () => {
 document.querySelector("#rate-overlay form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const email = document.querySelector("#rate-overlay #email").value;
+  const email = document.querySelector("#rate-overlay #email2").value;
   const rating = parseFloat(document.querySelector("#rate-overlay #rating").value);
   const comment = document.querySelector("#rate-overlay #comment").value;
 

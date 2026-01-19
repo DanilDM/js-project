@@ -30,9 +30,6 @@ section.hero h1{
   font-size: 74px;
   line-height: 74px;
   color: var(--dark);
-  /* align-items: end; */
-  /* display: inline; */
-  /* gap: 8px; */
 }
 section.hero div:first-child div:first-child p {
   font-family: "DM Sans";

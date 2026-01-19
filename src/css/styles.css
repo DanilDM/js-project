@@ -7,7 +7,6 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
 
 /* Modern-normalise */
 @import url('../../node_modules/modern-normalize/modern-normalize.css');

@@ -44,13 +44,12 @@
   flex-direction: column;
   align-items: start;
 }
-#exercise-overlay p.title {
+#exercise-overlay .title {
   margin-bottom: 8px;
   font-family: "DM Sans";
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0px;
   color: var(--light);
 }
 #exercise-overlay .rating {
@@ -65,7 +64,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: var(--light);
 }
 #exercise-overlay hr {
@@ -96,7 +94,6 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: color-mix(in srgb, var(--light) 40%, transparent);
 }
 #exercise-overlay .params div p:last-child {
@@ -104,7 +101,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: var(--light);
 }
 #exercise-overlay p.description {
@@ -113,7 +109,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0px;
   color: color-mix(in srgb, var(--light) 60%, transparent);
 }
 #exercise-overlay .buttons {
@@ -143,7 +138,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
 }
 #exercise-overlay .buttons a.add .remove { display: none; }
 #exercise-overlay .buttons a.remove .add { display: none; }
@@ -167,7 +161,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
 }
 
 #rate-overlay {
@@ -234,7 +227,7 @@
 #rate-overlay form input#rating::placeholder {
   color: var(--gray);
 }
-#rate-overlay form input#email {
+#rate-overlay form input#email2 {
   border-radius: 999px;
   padding: 12px 14px;
   background-color: #00000000;
@@ -246,7 +239,7 @@
   border: solid 1px var(--light);
   margin-bottom: 16px;
 }
-#rate-overlay form input#email::placeholder {
+#rate-overlay form input#email2::placeholder {
   color: var(--gray);
 }
 #rate-overlay form textarea {
@@ -265,7 +258,7 @@
 #rate-overlay form textarea::placeholder {
   color: var(--gray);
 }
-#rate-overlay form input#submit {
+#rate-overlay form input#submit2 {
   border-radius: 999px;
   padding: 12px 14px;
   background-color: var(--light);
@@ -276,7 +269,7 @@
   color: var(--dark);
   border: 0px;
 }
-#rate-overlay form input#submit:hover {
+#rate-overlay form input#submit2:hover {
   background-color: color-mix(in srgb, var(--light) 85%, transparent);
 }
 

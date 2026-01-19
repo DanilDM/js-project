@@ -88,7 +88,7 @@
 .mobile-middle {
   display: flex;
   flex-direction: column;
-  gap: 16;
+  gap: 16px;
   align-items: center;
 }
 .mobile-middle li a {
