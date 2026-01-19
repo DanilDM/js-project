@@ -2,55 +2,318 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/js-project/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/js-project/assets/favicon-Cpwlvc8J.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/js-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/js-project/assets/index-C9Z8tvtb.css">
+    <link rel="stylesheet" crossorigin href="/js-project/assets/index-CNjyGOMG.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="img/sprite.svg#logo"></use>
-        </svg>
+  <nav class="nav">
+    <a class="nav-logo" href="../index.html" aria-label="Site logo">
+      <img src="../img/main-logo.svg" alt="Main Logo" />
+      <!-- <svg class="nav-logo-icon" width="132" height="24">
+        <use href="img/main-logo.csv"></use>
+      </svg> -->
+    </a>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a class="nav-link" aria-label="Home tab">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-label="Favorites tab">Favorites</a>
+      </li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://facebook.com" aria-label="Facebook link" target="_blank">
+        <img src="../img/facebook.svg" alt="Facebook" />
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+      <a href="https://instagram.com" aria-label="Instagram link" target="_blank">
+        <img src="../img/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://youtube.com" aria-label="Youtube link" target="_blank">
+        <img src="../img/youtube.svg" alt="Youtube" />
+      </a>
+    </div>
+    <a class="nav-menu-toggle" aria-label="Expand menu">
+      <img src="../img/menu.svg" alt="Menu" />
+    </a>
+  </nav>
 </header>
-
+<div class="mobile-menu">
+  <div class="mobile-upper">
+    <a class="close-mobile-menu" aria-label="Close menu">
+      <img src="../img/close.svg" alt="Menu" />
+    </a>
+  </div>
+  <ul class="mobile-middle">
+    <li>
+      <a aria-label="Home tab">Home</a>
+    </li>
+    <li>
+      <a aria-label="Favorites tab">Favorites</a>
+    </li>
+  </ul>
+  <div class="mobile-lower">
+    <a href="https://facebook.com" aria-label="Facebook link" target="_blank">
+      <img src="../img/facebook-dark.svg" alt="Facebook" />
+    </a>
+    <a href="https://instagram.com" aria-label="Instagram link" target="_blank">
+      <img src="../img/instagram-dark.svg" alt="Instagram" />
+    </a>
+    <a href="https://youtube.com" aria-label="Youtube link" target="_blank">
+      <img src="../img/youtube-dark.svg" alt="Youtube" />
+    </a>
+  </div>
+</div>
 
     <main>
-      <!-- Loads the specified .html file -->
-      Nothing for now
+      <section class="hero">
+  <div>
+    <div>
+      <div>
+        <h1><img src="../img/sun.svg" alt="Main title icon" /> Get Body in Shape, Stay healthy</h1>
+      </div>
+      <p>Transform your physique and embrace a healthier lifestyle with our comprehensive fitness and nutrition support.</p>
+    </div>
+    <div>
+      <img
+        src="../img/hero-mini-1x.jpg"
+        srcset="../img/hero-mini-1x.jpg 1x, ../img/hero-mini-2x.jpg 2x, ../img/hero-mini-3x.jpg 3x"
+        alt="Two women doing yoga"
+      />
+      <div>
+        <span>#Sport</span>
+        <span>#Healthy</span>
+        <span>#Workout</span>
+        <span>#Diet</span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img
+      src="../img/hero-main-1x.jpg"
+      srcset="../img/hero-main-1x.jpg 1x, ../img/hero-main-2x.jpg 2x"
+      alt="Two women high-fiving each other while doing yoga"
+    />
+    <div>
+      <span>#Sport</span>
+      <span>#Healthy</span>
+      <span>#Workout</span>
+      <span>#Diet</span>
+    </div>
+  </div>
+</section>
+
+      <section class="main">
+  <div class="navigation-bar">
+    <div class="route">
+      <p class="title">Exercises</p>
+      <p class="separator">/</p>
+      <p class="category-title">Waist</p>
+    </div>
+    <div class="filters">
+      <div class="search-bar">
+        <input type="text" name="Search" id="search" aria-label="Search field" placeholder="Search" />
+        <img src="../img/search.svg" />
+      </div>
+      <div class="categories">
+        <a class="category-toggle" aria-label="Muscles category" onclick="setCategory('muscles')">Muscles</a>
+        <a class="category-toggle" aria-label="Body parts category" onclick="setCategory('bodypart')">Body parts</a>
+        <a class="category-toggle" aria-label="Equipment category" onclick="setCategory('equipment')">Equipment</a>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="side">
+      <div class="quote">
+        <img src="../img/quote1.svg" alt="Activity icon" />
+        <div>
+          <div>
+            <p class="quote-title">Quote of the day</p>
+            <img src="../img/quote2.svg" alt="Quote icon" />
+          </div>
+          <p class="quote-text">Quote text...Quote text...Quote tes dfxt...Quote textsdf   sdfs s...Quoted text...Quote text...Quote text...Quo sdfte text...</p>
+          <p class="quote-author">Name Name</p>
+        </div>
+      </div>
+      <div class="second-block">
+        <img
+          class="fav filler"
+          src="../img/quote-filler-fav-1x.jpg"
+          srcset="../img/quote-filler-fav-1x.jpg 1x, ../img/quote-filler-fav-2x.jpg 2x"
+          alt="Two women holding a bar"
+        />
+        <img
+          class="home filler"
+          src="../img/quote-filler-1x.jpg"
+          srcset="../img/quote-filler-1x.jpg 1x, ../img/quote-filler-2x.jpg 2x"
+          alt="Two women holding water bottles and taking a break"
+        />
+        <div class="fact">
+          <img class="home2" src="../img/fact1.svg" alt="Activity icon" />
+          <div>
+            <img class="fav2" src="../img/fact2.svg" alt="Activity icon" />
+            <p class="fact-time">110 min</p>
+            <p class="fact-title">Daily norm of sports</p>
+            <p class="fact-text">The World Health Organization recommends at least 150 minutes of moderate-intensity aerobic physical activity throughout the week for adults aged 18-64. However, what happens if we adjust that number to 110 minutes every day? While it might seem like a high number to hit, dedicating 110 minutes daily to sporting activities may offer unparalleled benefits to physical health, mental well-being, and overall quality of life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="results">
+      <div class="categories">
+      </div>
+      <div class="exercises">
+      </div>
+      <div class="favorites">
+      </div>
+      <div class="paginator">
+      </div>
+    </div>
+  </div>
+</section>
+<div id="super-hidden" data-nosnippet style="display: none;">
+  <a class="exercise">
+    <div class="first">
+      <p class="label">WORKOUT</p>
+      <div class="rating">
+        <p>987</p>
+        <img src="../img/star.svg" alt="Star icon" class="star-icon" />
+        <img src="../img/bin.svg" alt="Trash bin icon" class="bin-icon" />
+      </div>
+      <div class="start">
+        <p>Start</p>
+        <img src="../img/forward.svg" alt="Forward arrow icon" class="forward-icon" />
+      </div>
+    </div>
+    <div class="second">
+      <img src="../img/exercise.svg" alt="Exercise icon" class="exercise-icon" />
+      <p class="exercise-title">Barbell rollerout</p>
+    </div>
+    <div class="third">
+      <div>
+        <p>Burned calories:</p>
+        <p>87 / 3 min</p>
+      </div>
+      <div>
+        <p>Body part:</p>
+        <p>Waist</p>
+      </div>
+      <div>
+        <p>Target:</p>
+        <p>Abs</p>
+      </div>
+    </div>
+  </a>
+
+</div>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="footer-block-1">
+    <div class="footer-block-11">
+      <a href="../index.html" aria-label="Site logo" class="footer-main-logo">
+        <img src="../img/main-logo-dark.svg" alt="Main logo" />
       </a>
-    </p>
+      <div class="footer-socials">
+        <a href="https://facebook.com" aria-label="Facebook link" target="_blank">
+          <img src="../img/facebook-dark.svg" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram link" target="_blank">
+          <img src="../img/instagram-dark.svg" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com" aria-label="Youtube link" target="_blank">
+          <img src="../img/youtube-dark.svg" alt="Youtube" />
+        </a>
+      </div>
+    </div>
+    <div class="footer-block-12">
+      <p class="footer-tagline">Transforming your body shape with us</p>
+      <form aria-label="Newsletter form">
+        <p>Subscribe and learn about new exercises!</p>
+        <input type="email" name="Email" id="email" aria-label="Email field" placeholder="Email" required>
+        <input type="submit" value="Send" id="submit" aria-label="Send button">
+      </form>
+    </div>
+  </div>
+  <div class="footer-block-2">
+    <span>Your Energy. All rights reserved.</span>
+    <div class="splitter">
+      <a href="https://example.com" aria-label="Privacy Policy">Privacy Policy</a>
+      <span>/</span>
+      <a href="https://example.com" aria-label="Terms of Service">Terms of Service</a>
+    </div>
+    <span>©2023</span>
   </div>
 </footer>
 
 
+    <div id="exercise-overlay">
+  <div>
+    <a class="close-icon" aria-label="Close">
+      <img src="../img/close-overlay.svg" alt="Close icon" />
+    </a>
+    <img class="exercise-image" src="../img/hero-main-1x.jpg"/>
+    <div class="main-column">
+      <p class="title">Air bake</p>
+      <div class="rating">
+        <p>3.7</p>
+        <img src="../img/star.svg" alt="Star icon" class="star-icon" />
+      </div>
+      <hr>
+      <div class="params">
+        <div>
+          <p>Target</p>
+          <p>Abs</p>
+        </div>
+        <div>
+          <p>Body part</p>
+          <p>Waist</p>
+        </div>
+        <div>
+          <p>Equipment</p>
+          <p>Body weight</p>
+        </div>
+        <div>
+          <p>Popular</p>
+          <p>150</p>
+        </div>
+        <div>
+          <p>Burned calories</p>
+          <p>323/3 min</p>
+        </div>
+      </div>
+      <hr>
+      <p class="description">This refers to your core muscles, which include the rectus abdominis, obliques, and transverse abdominis. They're essential for maintaining posture, stability, and generating force in many movements. Exercises that target the abs include crunches, leg raises, and planks.</p>
+      <div class="buttons">
+        <a class="add" aria-label="Favorite button">
+          <span>Add to favorites</span>
+          <img src="../img/heart.svg" alt="Empty heart icon" class="add" />
+          <img src="../img/heart-full.svg" alt="Full heart icon" class="remove" />
+        </a>
+        <a class="rate" aria-label="Give a rating button">
+          <span>Give a rating</span>
+        </a>
+      </div> 
+    </div>
+  </div>
+</div>
+<div id="rate-overlay">
+  <form aria-label="Send a review form">
+    <a class="close-icon" aria-label="Close">
+      <img src="../img/close-overlay.svg" alt="Close icon" />
+    </a>
+    <div class="row">
+      <label for="rating">Rating:</label>
+      <input type="text" name="Rating" id="rating" placeholder="4.5" required>
+    </div>
+    <input type="email" name="Email" id="email" aria-label="Email field" placeholder="Email" required>
+    <textarea name="Comment" id="comment" rows="6" placeholder="Your comment" required></textarea>
+    <input type="submit" value="Send" id="submit" aria-label="Send button">
+  </form>
+</div>
+
+    <script src="./main.js" defer></script>
   </body>
 </html>
