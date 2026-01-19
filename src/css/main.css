@@ -1,0 +1,575 @@
+section.main {
+  padding: 32px 32px 132px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+section.main .navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+section.main .route {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+}
+section.main .route .title, section.main .route .separator {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  color: var(--dark);
+}
+section.main .route .separator {
+  display: none;
+}
+section.main .route .category-title {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  color: color-mix(in srgb, var(--dark) 50%, transparent);
+  display: none;
+}
+section.main .filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+section.main .filters .search-bar {
+  display: none;
+  border: solid 1px var(--dark);
+  border-radius: 999px;
+  align-items: center;
+  padding-right: 14px;
+  overflow: hidden;
+  width: 300px;
+}
+section.main .filters .search-bar input {
+  padding: 12px 14px;
+  color: var(--dark);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+section.main .filters .categories {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+section.main .filters .categories .category-toggle {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  color: color-mix(in srgb, var(--dark) 60%, transparent);
+}
+section.main .filters .categories .category-toggle:hover {
+  color: var(--dark);
+}
+section.main .filters .categories .active {
+  color: var(--dark);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+section.main div.main {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 32px;
+}
+section.main div.main .side {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 32px;
+}
+section.main div.main.fav .side {
+  gap: 16px;
+}
+section.main div.main .side .quote {
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 18px;
+  padding: 40px;
+  border-radius: 20px;
+  height: fit-content;
+  min-width: 300px;
+}
+section.main div.main .side .quote div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+section.main div.main .side .quote div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 6px;
+  gap: 18px;
+  align-self: stretch;
+}
+section.main div.main .side .quote .quote-title {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--light);
+}
+section.main div.main .side .quote .quote-text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: color-mix(in srgb, var(--light) 60%, transparent);
+  margin-bottom: 18px;
+}
+section.main div.main .side .quote .quote-author {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light);
+}
+section.main div.main .side .second-block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+}
+section.main div.main.fav .side .second-block {
+  flex-direction: row;
+  gap: 16px;
+}
+section.main div.main .second-block img.home {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+section.main div.main.fav .second-block img.home {
+  display: none;
+}
+section.main div.main .second-block img.fav {
+  display: none;
+}
+section.main div.main.fav .second-block img.fav {
+  display: block;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+section.main div.main .second-block .fact {
+  border-radius: 20px;
+  padding: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 16px;
+}
+section.main div.main.fav .second-block img.home2 {
+  display: none;
+}
+section.main div.main .second-block img.fav2 {
+  display: none;
+}
+section.main div.main.fav .second-block img.fav2 {
+  display: block;
+  margin-bottom: 15px;
+}
+section.main div.main .second-block .fact div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+section.main div.main .second-block .fact .fact-time {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+section.main div.main .second-block .fact .fact-title {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: color-mix(in srgb, var(--dark) 60%, transparent);
+  margin-bottom: 20px;
+}
+section.main div.main.fav .second-block .fact .fact-title {
+  margin-bottom: 0px;
+}
+section.main div.main .second-block .fact .fact-text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--dark);
+}
+section.main div.main.fav .second-block .fact .fact-text {
+  display: none;
+}
+section.main div.main .results {
+  width: 100%;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+div.main .results .categories {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 32px;
+  width: 100%;
+}
+div.main .results .categories a {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 20px;
+}
+div.main .results .categories a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1116;
+  border-radius: 12px;
+  z-index: 2;
+}
+div.main .results .categories a span:first-child {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--light);
+  z-index: 3;
+}
+div.main .results .categories a span:last-child {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: color-mix(in srgb, var(--light) 40%, transparent);
+  z-index: 3;
+}
+div.main .results .paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+div.main .results .paginator a {
+  border-radius: 99px;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--gray);
+  padding: 4px 12px;
+  max-width: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+div.main .results .paginator a.active {
+  border: solid 1px var(--dark);
+  color: var(--dark);
+}
+div.main .results .paginator a:hover {
+  color: var(--dark);
+}
+div.main .results .exercises {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 32px;
+  width: 100%;
+}
+div.main .results .favorites {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 32px;
+  width: 100%;
+}
+a.exercise {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 15px;
+  cursor: pointer;
+  height: min-content;
+}
+a.exercise .first { 
+  display: flex;
+  gap: 17px;
+  margin-bottom: 25px;
+}
+a.exercise .first .label {
+  justify-self: start;
+  padding: 5px 8px;
+  border: 1px solid var(--dark);
+  border-radius: 99px;
+  color: var(--dark);
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+a.exercise .first .rating { 
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+a.exercise .first .rating p { 
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--dark);
+}
+a.exercise .first .start { 
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: auto;
+}
+a.exercise .first .start p { 
+  color: var(--dark);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+a.exercise .second { 
+  display: flex;
+  margin-bottom: 8px;
+  flex-direction: row;
+  justify-content: start;
+  gap: 16px;
+}
+a.exercise .second p { 
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: var(--dark);
+}
+a.exercise .third { 
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 16px;
+  row-gap: 0px;
+  flex-wrap: wrap;
+}
+a.exercise .third div { 
+  display: flex;
+  gap: 4px;
+}
+a.exercise .third div p:first-child { 
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: color-mix(in srgb, var(--dark) 40%, transparent);
+}
+a.exercise .third div p:last-child { 
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--dark);
+}
+p.no-results {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 20vh auto;
+  max-width: 50%;
+  text-align: center;
+  grid-column: span 2;
+}
+a.exercise .first .rating img.bin-icon { 
+  display: none;
+}
+div.main.fav a.exercise .first .rating img.bin-icon { 
+  display: block;
+}
+div.main.fav a.exercise .first .rating img.star-icon { 
+  display: none;
+}
+div.main.fav a.exercise .first .rating p { 
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.main {
+    padding-bottom: 100px;
+  }
+  section.main .navigation-bar {
+    flex-direction: column;
+    gap: 32px;
+    justify-content: start;
+    align-items: start;
+  }
+  section.main .filters {
+    justify-content: space-between;
+    align-self: stretch;
+  }
+  section.main div.main {
+    flex-direction: column-reverse;
+    gap: 64px;
+  }
+  section.main div.main.fav {
+    flex-direction: column;
+  }
+  section.main div.main .side {
+    flex: none;
+    flex-direction: row;
+    gap: 16px;
+  }
+  section.main div.main.fav .side {
+    flex-direction: column;
+  }
+  section.main div.main .side .second-block {
+    flex-direction: column;
+    gap: 16px;
+  }
+  section.main div.main.fav .side .second-block {
+    flex-direction: row;
+    gap: 16px;
+  }
+  section.main div.main .second-block img.home {
+    width: 100%;
+    height: 50%;
+  }
+  section.main div.main.fav .second-block img.fav {
+    width: 50%;
+  }
+  section.main div.main.fav .second-block .fact {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.main {
+    padding-bottom: 80px;
+    gap: 20px;
+  }
+  section.main .navigation-bar {
+    gap: 20px;
+  }
+  section.main .route .title, section.main .route .separator {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  section.main .route .category-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  section.main .filters {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+  }
+  section.main .filters .search-bar {
+    width: 100%;
+  }
+  section.main div.main {
+    gap: 80px;
+  }
+  section.main div.main.fav {
+    gap: 40px;
+  }
+  section.main div.main .side {
+    flex-direction: column;
+    gap: 20px;
+  }
+  section.main div.main .side .quote {
+    padding: 20px;
+    min-width: unset;
+  }
+  section.main div.main .side .second-block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  section.main div.main.fav .side .second-block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  section.main div.main.fav .second-block img.fav {
+    width: 100%;
+  }
+  section.main div.main.fav .second-block .fact {
+    width: unset;
+    align-self: stretch;
+  }
+  section.main div.main .results {
+    gap: 20px;
+  }
+  div.main .results .categories {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+  div.main .results .exercises {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  div.main .results .favorites {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

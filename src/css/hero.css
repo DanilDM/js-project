@@ -1,0 +1,147 @@
+section.hero {
+  padding: 80px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+}
+section.hero div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.hero div:first-child div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+section.hero div:first-child div:first-child div {
+  max-width: 70%;
+}
+section.hero div:first-child div:first-child div img{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+section.hero h1{
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 74px;
+  line-height: 74px;
+  color: var(--dark);
+  /* align-items: end; */
+  /* display: inline; */
+  /* gap: 8px; */
+}
+section.hero div:first-child div:first-child p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--dark);
+  max-width: 55%;
+}
+section.hero div:first-child div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: end;
+  justify-content: right;
+  align-self: end;
+}
+section.hero div:first-child div:last-child img {
+  width: 168px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+section.hero div:first-child div:last-child div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 250px;
+}
+section.hero div:first-child div:last-child div span {
+  padding: 4px 16px;
+  border: solid 1px var(--dark);
+  border-radius: 99px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark);
+}
+section.hero div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+section.hero div:last-child img{
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 60px;
+}
+section.hero div:last-child div {
+  display: none;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+}
+section.hero div:last-child div span {
+  padding: 4px 16px;
+  border: solid 1px var(--dark);
+  border-radius: 99px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark);
+}
+@media only screen and (max-width: 1200px) {
+  section.hero div:first-child div:last-child {
+    display: none;
+  }
+  section.hero div:first-child div:first-child p {
+    max-width: 60%;
+  }
+  section.hero div:first-child div:first-child div {
+    max-width: 80%;
+  }
+  section.hero div:last-child div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.hero div:last-child img{
+    height: 460px;
+    border-radius: 30px;
+  }
+  section.hero div:first-child div:first-child p {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: none;
+  }
+  section.hero div:first-child div:first-child div {
+    max-width: none;
+  }
+  section.hero div:first-child div:first-child div img{
+    width: 44px;
+    height: 44px;
+    vertical-align: text-top;
+  }
+  section.hero h1{
+    font-size: 38px;
+    line-height: 44px; 
+  }
+  section.hero {
+    padding: 50px 20px 20px 20px;
+  }
+}

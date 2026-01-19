@@ -9,6 +9,18 @@
 @import url('./base.css');
 @import url('./container.css');
 
+/* Modern-normalise */
+@import url('../../node_modules/modern-normalize/modern-normalize.css');
+
 /* Sections style */
 @import url('./header.css');
 @import url('./footer.css');
+@import url('./hero.css');
+@import url('./main.css');
+@import url('./overlays.css');
+
+/* Fonts */
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-VariableFont_opsz\,wght.ttf");
+}

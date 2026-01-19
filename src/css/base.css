@@ -7,21 +7,27 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: #F4F4F4;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* variables */
+  --dark: #242424;
+  --light: #F4F4F4;
+  --gray: #C6CDD1;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  max-width: 100svw;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 main {

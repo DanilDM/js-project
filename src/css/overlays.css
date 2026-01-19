@@ -1,0 +1,315 @@
+#exercise-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: color-mix(in srgb, var(--dark) 50%, transparent);
+}
+#exercise-overlay > div {
+  width: 60svw;
+  height: fit-content;
+  max-height: 100svh;
+  background-color: var(--dark);
+  position: relative;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+#exercise-overlay .close-icon {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 4px;
+  top: 16px;
+  right: 16px;
+  display: flex;
+}
+#exercise-overlay .close-icon:hover {
+  background-color: color-mix(in srgb, var(--light) 20%, transparent);
+}
+#exercise-overlay .exercise-image {
+  border-radius: 12px;
+  max-width: 40%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+}
+#exercise-overlay .main-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#exercise-overlay p.title {
+  margin-bottom: 8px;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: var(--light);
+}
+#exercise-overlay .rating {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+#exercise-overlay .rating p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--light);
+}
+#exercise-overlay hr {
+  background-color: color-mix(in srgb, var(--light) 20%, transparent);
+  height: 1px;
+  width: 100%;
+  margin-top: 0;
+  border: none;
+}
+#exercise-overlay hr:first-of-type { margin-bottom: 8px; }
+#exercise-overlay hr:last-of-type { margin-bottom: 16px; }
+#exercise-overlay .params {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+#exercise-overlay .params div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: max-content;
+  align-items: start;
+}
+#exercise-overlay .params div p:first-child {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: color-mix(in srgb, var(--light) 40%, transparent);
+}
+#exercise-overlay .params div p:last-child {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: var(--light);
+}
+#exercise-overlay p.description {
+  margin-bottom: 40px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: color-mix(in srgb, var(--light) 60%, transparent);
+}
+#exercise-overlay .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: stretch;
+  align-self: stretch;
+}
+#exercise-overlay .buttons a:first-child {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 99px;
+  background-color: var(--light);
+}
+#exercise-overlay .buttons a:first-child:hover {
+  background-color: color-mix(in srgb, var(--light) 80%, transparent);
+}
+#exercise-overlay .buttons a:first-child span {
+  color: var(--dark);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+#exercise-overlay .buttons a.add .remove { display: none; }
+#exercise-overlay .buttons a.remove .add { display: none; }
+#exercise-overlay .buttons a img { max-width: 18px; }
+#exercise-overlay .buttons a:last-child {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 99px;
+  border: solid 1px var(--light);
+}
+#exercise-overlay .buttons a:last-child:hover {
+  background-color: color-mix(in srgb, var(--light) 20%, transparent);
+}
+#exercise-overlay .buttons a:last-child span {
+  color: var(--light);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+#rate-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: color-mix(in srgb, var(--dark) 50%, transparent);
+}
+#rate-overlay .close-icon {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 4px;
+  top: 16px;
+  right: 16px;
+  display: flex;
+}
+#rate-overlay .close-icon:hover {
+  background-color: color-mix(in srgb, var(--light) 20%, transparent);
+}
+#rate-overlay form {
+  width: 100%;
+  max-width: 500px;
+  height: fit-content;
+  max-height: 100svh;
+  background-color: var(--dark);
+  position: relative;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+#rate-overlay form .row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+#rate-overlay form label {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: var(--light);
+}
+#rate-overlay form input#rating {
+  border-radius: 999px;
+  padding: 12px 14px;
+  background-color: #00000000;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: var(--light);
+  border: solid 1px var(--light);
+  max-width: 60px;
+}
+#rate-overlay form input#rating::placeholder {
+  color: var(--gray);
+}
+#rate-overlay form input#email {
+  border-radius: 999px;
+  padding: 12px 14px;
+  background-color: #00000000;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light);
+  border: solid 1px var(--light);
+  margin-bottom: 16px;
+}
+#rate-overlay form input#email::placeholder {
+  color: var(--gray);
+}
+#rate-overlay form textarea {
+  border-radius: 15px;
+  padding: 12px 14px;
+  background-color: #00000000;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light);
+  border: solid 1px var(--light);
+  margin-bottom: 32px;
+  resize: vertical;
+}
+#rate-overlay form textarea::placeholder {
+  color: var(--gray);
+}
+#rate-overlay form input#submit {
+  border-radius: 999px;
+  padding: 12px 14px;
+  background-color: var(--light);
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark);
+  border: 0px;
+}
+#rate-overlay form input#submit:hover {
+  background-color: color-mix(in srgb, var(--light) 85%, transparent);
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #exercise-overlay > div {
+    width: calc(100svw - 128px);
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+   #exercise-overlay > div {
+    width: calc(100svw - 80px);
+    padding: 40px 20px 20px 20px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  #exercise-overlay .exercise-image {
+    max-width: 40svh;
+    max-height: 20svh;
+    width: 100%;
+    aspect-ratio: unset;
+  }
+  #exercise-overlay .buttons {
+    flex-direction: column;
+  }
+  #exercise-overlay .close-icon {
+    top: 10px;
+    right: 10px;
+  }
+  #exercise-overlay p.description {
+    margin-bottom: 16px;
+  }
+}
