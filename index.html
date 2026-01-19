@@ -8,7 +8,7 @@
     <title>My js project</title>
     <meta name="description" content="I created this website as a final project for the javascript class of my bachelors.">
     <script type="module" crossorigin src="/js-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/js-project/assets/index-CYuz4HKw.css">
+    <link rel="stylesheet" crossorigin href="/js-project/assets/index-alOUE5ZT.css">
   </head>
   <body>
     <header class="header">
@@ -91,11 +91,19 @@
     </div>
   </div>
   <div>
-    <img
-      src="/js-project/assets/hero-main-1x-JkwjB0br.jpg"
-      srcset="/js-project/assets/hero-main-1x-JkwjB0br.jpg 1x, /js-project/assets/hero-main-2x-Dz8P5uDH.jpg 2x"
-      alt="Two women high-fiving each other while doing yoga"
-    />
+    <picture>
+      <source 
+        srcset="/js-project/assets/hero-main-mobile-1x-BbubmoEq.jpg 1x, /js-project/assets/hero-main-mobile-2x-CjQ4U-X7.jpg 2x" 
+        media="(max-width: 768px)"
+      >
+      <img
+        src="/js-project/assets/hero-main-1x-JkwjB0br.jpg"
+        srcset="/js-project/assets/hero-main-1x-JkwjB0br.jpg 1x, /js-project/assets/hero-main-2x-Dz8P5uDH.jpg 2x"
+        alt="Two women high-fiving each other while doing yoga"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </picture>
     <div>
       <span>#Sport</span>
       <span>#Healthy</span>
