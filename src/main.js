@@ -406,6 +406,10 @@ function ratingOverlay() {
 navLinks[0].addEventListener("click", () => setPage("home"));
 navLinks[1].addEventListener("click", () => setPage("favorites"));
 
+document.querySelector(".category-toggle-muscles").addEventListener("click", () => setCategory("muscles"));
+document.querySelector(".category-toggle-bodypart").addEventListener("click", () => setCategory("bodypart"));
+document.querySelector(".category-toggle-equipment").addEventListener("click", () => setCategory("equipment"));
+
 document.querySelector("nav .nav-menu-toggle").addEventListener("click", () => {
   menu.style.display = "flex";
 });
